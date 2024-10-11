@@ -1,0 +1,16 @@
+﻿@using Microsoft.AspNetCore.Components.Routing
+@using MudBlazor
+@using WeatherApi.Layout  <!-- Make sure to use the correct namespace -->
+
+<MudLayout>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <MudMainContent>
+                <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+            </MudMainContent>
+        </Found>
+        <NotFound>
+            <MudText Typo="Typo.h5" Color="Color.Error">Sorry, there's nothing at this address.</MudText>
+        </NotFound>
+    </Router>
+</MudLayout>

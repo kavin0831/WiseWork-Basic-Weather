@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|c:\\users\\appuk\\source\\repos\\weatherapi\\weatherapi\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6468284A-3C80-48E5-9128-1CA634852A04}|WeatherApi\\WeatherApi.csproj|solutionrelative:weatherapi\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 278,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Program.cs",
+              "RelativeDocumentMoniker": "WeatherApi\\Program.cs",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Program.cs",
+              "RelativeToolTip": "WeatherApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T09:21:19.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "WeatherApi\\Pages\\Counter.razor",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Pages\\Counter.razor",
+              "RelativeToolTip": "WeatherApi\\Pages\\Counter.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:19:12.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "WeatherApi\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "WeatherApi\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:17:22.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "WeatherApi\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "WeatherApi\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:16:34.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "WeatherApi\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Pages\\Weather.razor",
+              "RelativeToolTip": "WeatherApi\\Pages\\Weather.razor",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:08:37.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\_Imports.razor",
+              "RelativeDocumentMoniker": "WeatherApi\\_Imports.razor",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\_Imports.razor",
+              "RelativeToolTip": "WeatherApi\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:21:50.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\App.razor",
+              "RelativeDocumentMoniker": "WeatherApi\\App.razor",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\App.razor",
+              "RelativeToolTip": "WeatherApi\\App.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:21:27.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "WeatherApi\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\appuk\\source\\repos\\WeatherApi\\WeatherApi\\Pages\\Home.razor",
+              "RelativeToolTip": "WeatherApi\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-03T09:22:16.954Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 122,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

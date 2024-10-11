@@ -1,0 +1,163 @@
+﻿@page "/weather"
+@using MudBlazor
+@inject HttpClient Http
+
+<PageTitle>Weather</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mud-container-custom">
+    <MudGrid>
+        <MudItem xs="12">
+            <MudText Typo="Typo.h4" Color="Color.Primary" Class="mb-3">Live Weather</MudText>
+            <MudText Typo="Typo.body2" Class="mb-4">This component demonstrates fetching live data from a weather API. Enter the city name to get current weather details.</MudText>
+        </MudItem>
+
+        <MudItem xs="12">
+            <MudTextField @bind-Value="city"
+                          FullWidth
+                          Placeholder="Enter City Name"
+                          Margin="Margin.None"
+                          Class="mb-3"
+                          Variant="Variant.Outlined" />
+        </MudItem>
+
+        <MudItem xs="12" md="4">
+            <MudButton Color="Color.Primary" @onclick="GetWeather" FullWidth Class="mb-3">Get Weather</MudButton>
+        </MudItem>
+
+        <MudItem xs="12">
+            @if (forecasts == null)
+            {
+                <MudText Typo="Typo.subtitle1" Color="Color.Secondary">Loading weather data...</MudText>
+            }
+            else
+            {
+                <MudTable Items="@forecasts" Striped="true" Hover="true" Bordered="true" Dense="true" Class="table-custom">
+                    <HeaderContent>
+                        <MudTh>Date</MudTh>
+                        <MudTh>Temp. (C)</MudTh>
+                        <MudTh>Temp. (F)</MudTh>
+                        <MudTh>Summary</MudTh>
+                        <MudTh>Humidity (%)</MudTh>
+                        <MudTh>Wind Speed (m/s)</MudTh>
+                        <MudTh>Precipitation (mm)</MudTh>
+                    </HeaderContent>
+                    <RowTemplate>
+                        <MudTd>@context.Date.ToString("MM/dd/yyyy HH:mm")</MudTd>
+                        <MudTd>@context.TemperatureC.ToString("F2")</MudTd>
+                        <MudTd>@context.TemperatureF.ToString("F2")</MudTd>
+                        <MudTd>@context.Summary</MudTd>
+                        <MudTd>@context.Humidity</MudTd>
+                        <MudTd>@context.WindSpeed.ToString("F2")</MudTd>
+                        <MudTd>@context.Precipitation?.ToString("F2")</MudTd>
+                    </RowTemplate>
+                </MudTable>
+            }
+        </MudItem>
+    </MudGrid>
+</MudContainer>
+
+<!-- Inline styles for MudBlazor components -->
+<style>
+    .mud-container-custom {
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-custom {
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+        width: 100%;
+    }
+
+    .table-custom th, .table-custom td {
+        border: 1px solid #ddd;
+        padding: 12px;
+    }
+
+    .table-custom th {
+        background-color: #f1f1f1;
+        text-align: left;
+    }
+
+    .mb-3 {
+        margin-bottom: 16px;
+    }
+
+    .mb-4 {
+        margin-bottom: 24px;
+    }
+</style>
+
+@code {
+    private WeatherForecast[]? forecasts;
+    private string city = "London";  // Default city, user can change this
+
+    private async Task GetWeather()
+    {
+        if (string.IsNullOrWhiteSpace(city))
+        {
+            return;
+        }
+
+        string apiKey = "b3c4362ac67bfed29844f6e01366171a";  // Replace with your actual API key
+        string apiUrl = $"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}";
+
+        try
+        {
+            forecasts = new WeatherForecast[]
+            {
+                await Http.GetFromJsonAsync<WeatherForecast>(apiUrl)
+            };
+
+            foreach (var forecast in forecasts)
+            {
+                forecast.Date = DateTime.Now;
+            }
+        }
+        catch (Exception ex)
+        {
+            forecasts = null;
+            Console.WriteLine($"Error fetching weather data: {ex.Message}");
+        }
+    }
+
+    public class WeatherForecast
+    {
+        public DateTime Date { get; set; } = DateTime.Now;
+        public MainInfo Main { get; set; }
+        public List<WeatherDescription> Weather { get; set; } = new List<WeatherDescription>();
+        public WindInfo Wind { get; set; }
+        public RainInfo Rain { get; set; }
+
+        public double TemperatureC => Math.Round(Main.Temp - 273.15, 2);  // Convert from Kelvin to Celsius and round
+        public double TemperatureF => Math.Round((Main.Temp - 273.15) * 9 / 5 + 32, 2);  // Convert to Fahrenheit and round
+        public string Summary => Weather.FirstOrDefault()?.Description ?? "No Data";
+        public int Humidity => Main.Humidity;
+        public double WindSpeed => Wind.Speed;  // Wind speed in meter/sec
+        public double? Precipitation => Rain?.Amount ?? 0;  // Precipitation, null if not available
+    }
+
+    public class MainInfo
+    {
+        public double Temp { get; set; }
+        public int Humidity { get; set; }
+    }
+
+    public class WeatherDescription
+    {
+        public string Description { get; set; }
+    }
+
+    public class WindInfo
+    {
+        public double Speed { get; set; }  // Wind speed in meter/sec
+    }
+
+    public class RainInfo
+    {
+        [System.Text.Json.Serialization.JsonPropertyName("1h")]
+        public double? Amount { get; set; }  // Precipitation volume for the last hour (optional)
+    }
+}
